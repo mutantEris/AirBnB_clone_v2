@@ -28,10 +28,10 @@ class FileStorage:
     def delete(self, obj=None):
             """kills obj if exists"""
             if obj:
-                del self._objects
-            else:
-                pass
-            
+                for key in self.__objects:
+                    if self.__objects[key] == obj:
+                        del self.__objects[key]
+                        return
     def reload(self):
         """Loads storage dictionary from file"""
         from models.base_model import BaseModel
