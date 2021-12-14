@@ -20,8 +20,8 @@ def yo(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route('/python/(<text>)')
 @app.route('/python/')
+@app.route('/python/(<text>)')
 def sup(text="is cool"):
     return "Python {}".format(text.replace("_", " "))
 
