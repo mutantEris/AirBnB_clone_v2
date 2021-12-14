@@ -21,7 +21,7 @@ def yo(text):
 
 
 @app.route('/python/')
-@app.route('/python/(<text>)')
+@app.route('/python/<text>')
 def sup(text="is cool"):
     return "Python {}".format(text.replace("_", " "))
 
