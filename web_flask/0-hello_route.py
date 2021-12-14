@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Scripts for Flask Applications"""
+"""These are scripts for Flask applications"""
 from flask import Flask
 app = Flask(__name__)
 app.url_map.strict_slashes = False
